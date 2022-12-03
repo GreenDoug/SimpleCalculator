@@ -43,8 +43,8 @@ String StrO, StrN1, StrN2, resultMsg, StrResult;
             StrN2 = enterN2.getText().toString();
         }
         int Operator = Integer.parseInt(StrO);
-        double N1 = Double.parseDouble(StrN1);
-        double N2 = Double.parseDouble(StrN2);
+        int N1 = Integer.parseInt(StrN1);
+        int N2 = Integer.parseInt(StrN2);
         double result = Double.parseDouble(StrResult);
 
         switch(Operator){
@@ -64,7 +64,7 @@ String StrO, StrN1, StrN2, resultMsg, StrResult;
         resultMsg = "The 1st number that you input is " + StrN1 +
                 " The 2nd Number that you input is " + StrN2 +
                 " The operator that you choose is " + StrO +
-                " So therefore your result is " + (int)result;
+                " So therefore your result is " + (double)result;
 
         Bundle args = new Bundle();
         args.putString("result", resultMsg);
