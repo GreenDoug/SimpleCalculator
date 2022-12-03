@@ -61,12 +61,12 @@ String StrO, StrN1, StrN2, resultMsg, StrResult;
                 Operator = N1 / N2;
                 break;
         }
-        double result = Operator;
+        int result = Operator;
 
         resultMsg = "The 1st number that you input is " + StrN1 +
-                " The 2nd Number that you input is " + StrN2 +
-                " The operator that you choose is " + StrO +
-                " So therefore your result is " + result;
+                "\n The 2nd Number that you input is " + StrN2 +
+                "\n The operator that you choose is " + StrO +
+                "\n\n\n So therefore your result is " + result;
 
         Bundle args = new Bundle();
         args.putString("result", resultMsg);
