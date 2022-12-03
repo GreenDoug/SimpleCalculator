@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="title">Simple Calculator</string>
+    <string name="title2">Addition Result</string>
+    <string name="title3">Subtraction Result</string>
+    <string name="title4">Multiplication Result</string>
+    <string name="title5">Division Result</string>
+    <string name="desc">Input the operator that you want to solve</string>
+    <string name="desc2">Input your 1st and 2nd numbers</string>
+    <string name="operator">+, -, *, /</string>
+    <string name="o1">Input Operator</string>
+    <string name="n1">Input 1st Number</string>
+    <string name="n2">Input 2nd Number</string>
+    <string name="result">Result</string>
+    <string name="btnSolve">Solve</string>
+    <string name="btnReturn">Return</string>
+</resources>
