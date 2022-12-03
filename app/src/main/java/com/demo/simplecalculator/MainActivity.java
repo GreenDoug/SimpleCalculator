@@ -67,7 +67,7 @@ String StrO, StrN1, StrN2, resultMsg, StrResult;
                 " So therefore your result is " + (int)result;
 
         Bundle args = new Bundle();
-        args.putString("result", String.valueOf(resultMsg));
+        args.putString("result", resultMsg);
 
         Intent intent;
         if(Operator == 1){
