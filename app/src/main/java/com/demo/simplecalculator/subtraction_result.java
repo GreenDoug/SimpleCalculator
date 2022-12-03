@@ -19,7 +19,7 @@ public class subtraction_result extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.subtraction_result);
 
         Button btnReturn = findViewById(R.id.btnReturn);
-        TextView tvResult = findViewById(R.id.txtresult2);
+        TextView tvResult = findViewById(R.id.txtresult);
         tvResult.setText(result);
         btnReturn.setOnClickListener(this);
     }

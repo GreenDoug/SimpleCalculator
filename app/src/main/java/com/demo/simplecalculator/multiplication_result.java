@@ -19,7 +19,7 @@ public class multiplication_result extends AppCompatActivity implements View.OnC
         setContentView(R.layout.multiplication_result);
 
         Button btnReturn = findViewById(R.id.btnReturn);
-        TextView tvResult = findViewById(R.id.txtresult3);
+        TextView tvResult = findViewById(R.id.txtresult);
         tvResult.setText(result);
         btnReturn.setOnClickListener(this);
     }

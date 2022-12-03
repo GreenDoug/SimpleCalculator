@@ -19,7 +19,7 @@ public class division_result extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.division_result);
 
         Button btnReturn = findViewById(R.id.btnReturn);
-        TextView tvResult = findViewById(R.id.txtresult4);
+        TextView tvResult = findViewById(R.id.txtresult);
         tvResult.setText(result);
         btnReturn.setOnClickListener(this);
     }

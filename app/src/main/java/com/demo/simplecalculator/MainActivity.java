@@ -42,41 +42,43 @@ String StrO, StrN1, StrN2, resultMsg, StrResult;
             StrN1 = enterN1.getText().toString();
             StrN2 = enterN2.getText().toString();
         }
+        int enterO = Integer.parseInt(StrO);
         int Operator = Integer.parseInt(StrO);
         int N1 = Integer.parseInt(StrN1);
         int N2 = Integer.parseInt(StrN2);
-        double result = Double.parseDouble(StrResult);
 
         switch(Operator){
             case 1:
-                result = N1 + N2;
+                Operator = N1 + N2;
                 break;
             case 2:
-                result = N1 - N2;
+                Operator = N1 - N2;
                 break;
             case 3:
-                result = N1 * N2;
+                Operator = N1 * N2;
                 break;
             case 4:
-                result = N1 / N2;
+                Operator = N1 / N2;
                 break;
         }
+        double result = Operator;
+
         resultMsg = "The 1st number that you input is " + StrN1 +
                 " The 2nd Number that you input is " + StrN2 +
                 " The operator that you choose is " + StrO +
-                " So therefore your result is " + (double)result;
+                " So therefore your result is " + result;
 
         Bundle args = new Bundle();
         args.putString("result", resultMsg);
 
         Intent intent;
-        if(Operator == 1){
+        if(enterO == 1){
             intent = new Intent(MainActivity.this, addition_result.class);
         }
-        else if(Operator == 2){
+        else if(enterO == 2){
             intent = new Intent(MainActivity.this, subtraction_result.class);
         }
-        else if(Operator == 3){
+        else if(enterO == 3){
             intent = new Intent(MainActivity.this, multiplication_result.class);
         }
         else{
